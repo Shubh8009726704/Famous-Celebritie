@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+    <style>
+       
+        
+        * {
+            box-sizing: border-box;
+            margin: 5px;
+            text-align: center;
+            font-size: 25px;
+           
+        }
+
+        #header,
+        #footer,
+        #banner {
+            height: 80px;
+            width: 100%;
+            border: 1px solid BLACK;
+            background-color: gray;
+        }
+        #banner{
+            background-color: rgb(232, 139, 139);
+
+        }
+
+        #left {
+            height: 395px;
+            width: 350px;
+            border: 1px solid black;
+            margin-left: 5px;
+            float: left;}
+            
+            #left{
+            background-color: rgb(139, 232, 178);
+
+
+        }
+
+        #main {
+            height: 400px;
+            width: 450px;
+            border: 1px solid black;
+            margin-left: 400px;
+        }
+
+        #root {
+            height: 190px;
+            width: 435px;
+            border: 1px solid black;
+            background-color: rgb(76, 81, 57);
+
+
+        }
+
+
+        #first,
+        #second {
+            height: 175px;
+            width: 200px;
+            border: 1px solid rgb(17, 17, 17);
+            float: left;
+            background-color: rgb(201, 232, 139);
+
+
+        }
+
+        #second {
+            float: right;
+
+        }
+
+        #third {
+            height: 190px;
+            width: 435px;
+            border: 1px solid black;
+            background-color: rgb(150, 139, 232);
+        }
+
+        #footer {
+
+            height: 80px;
+            width: 100%;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">Header</div>
+    <div id="banner">Banner</div>
+    <div id="left">Left side</div>
+    <div id="main">
+        <div id="root">
+            <div id="first">First</div>
+            <div id="second">Second</div>
+        </div>
+        <div id="third">Third</div>
+    </div>
+    <div id="footer">Footer</div>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: url(./images/form3.jpeg);
+
+    }
+
+    .row {
+        padding: 10px;
+        /* width: 300px; */
+
+    }
+
+    .space {
+        width: 150px;
+        display: inline-block;
+    }
+
+    .wapper {
+        background: rgba(148, 222, 153, 0.7);
+        width: 500px;
+        margin: 0 auto;
+        border-radius: 10px;
+        height: 100%;
+
+
+    }
+
+    h1 {
+        text-align: center;
+        color: blue;
+
+    }
+
+    input[type=submit],
+    input[type=reset] {
+        background: aqua;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+    }
+
+    input[type=submit] {
+        margin-left: 130px;
+    }
+
+    label {
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="wapper">
+        <form>
+            <!---Heading-->
+            <legend>
+                <h1>Registration Form</h1>
+            </legend>
+            <!--- For Name-->
+            <div class="row">
+                <label for="name" class="space"> Name</label>
+                <input type="text" name="name">
+            </div>  
+           <!--- For Father Name-->
+          
+            <div class="row">
+                <label for="fname" class="space"> Father Name</label>
+                <input type="text" name="fname">
+            </div>
+           <!--- For gender-->
+
+            <div class="row">
+                <label for="gender" class="space">Gender</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Others
+            </div>
+                       <!--- For Hobbies-->
+
+            <div class="row">
+                <label for="hobbies" class="space">Hobbies</label>
+                <input type="checkbox" name="study">Study
+                <input type="checkbox" name="singing">Singing
+                <input type="checkbox" name="listening">Listening Song
+            </div>
+           <!--- For Email -->
+
+            <div class="row">
+                <label for="Email" class="space" required>Email ID</label>
+                <input type="email" name="email">
+            </div>
+                       <!--- For DOB-->
+
+            <div class="row">
+                <label for="dob" class="space">Date of Birth(DOB)</label>
+                <input type="date" name="dob">
+            </div>
+                       <!--- For Mobile Number-->
+
+            <div class="row">
+                <label for="mobile" class="space">Mobile Number</label>
+                <input type="number" name="number" maxlength="10">
+            </div>
+                     <!--- For Mobile Number-->
+
+                     <div class="row">
+                        <label for="search" class="space">Search Bar</label>
+                        <input type="search" name="search" id="search">
+                        <button>Search</button>
+                    </div>
+                       <!--- For City-->
+
+            <div class="row">
+                <label for="city" class="space">City</label>
+                <select>
+                    <option>----select city----</option>
+
+                    <option>Varansi</option>
+                    <option>Allahabad</option>
+                    <option>Lucknow</option>
+                    <option>Kanpur</option>
+                    <option>Mirzapur</option>
+                    <option>Balia</option>
+
+                </select>
+                           <!--- For State-->
+
+            </div>
+            <div class="row">
+                <label for="address" class="space">State</label>
+                <select>
+                    <option>----select state----</option>
+
+                    <option>Uttar Pradesh</option>
+                    <option>Rajasthan</option>
+                    <option>Calicut</option>
+                    <option>Telanagana</option>
+                    <option>Chattisgarh</option>
+                    <option>Keral</option>
+
+                </select>
+                         
+
+            </div>
+              <!--- For pincode-->
+            <div class="row">
+                <label for="pincode" class="space">Pincode</label>
+                <input type="number" name="pincode">
+            </div>
+             <!--- For Qualification-->
+            <div class="row">
+                <label for="qlf" class="space">Qualification</label>
+                <input type="checkbox" name="hs">High School
+                <div>
+                    <label for="qlf" class="space"></label>
+                    <input type="checkbox" name="Higher">Higher School
+                </div>
+                <div>
+                    <label for="qlf" class="space"></label>
+                    <input type="checkbox" name="gra">Graduation
+                </div>
+                <div>
+                    <label for="qlf" class="space"></label>
+                    <input type="checkbox" name="dip">Diploma
+                </div>
+
+            </div>
+            <div class="row">
+                <label for="course" class="space">Courses Applied </label>
+                <select>
+                    <option>----select----</option>
+                    <optgroup label="Bachelor Degree">
+                        <option>Bachelor of Science(B.Sc)</option>
+                        <option>Bachelor of Art(BA)</option>
+                        <option>Bachelor of Commerce(B.Com)</option>
+                    </optgroup>
+                    <optgroup label="Master Degree">
+                        <option>Master of Commerce(M.Com)</option>
+                        <option>Master of Art(MA)</option>
+                        <option>Master of Science(M.Sc)</option>
+                    </optgroup>
+                </select>
+            </div>
+
+
+            <div class="row">
+                <label for="file" class="space">Upload File</label>
+                <input type="file" name="file" multiple accept=".jpg">
+
+
+                <div class="row">
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Reset">
+                </div>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
